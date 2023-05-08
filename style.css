@@ -1,0 +1,129 @@
+:root{
+    --primary: #0D3EEC;
+    --secondary: black;
+    --danger:#FF5858;
+    --cg:#C9C9C9;
+    --bg:#EFEFEF;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+fs-16{
+    font-size: 16px;
+}
+fs-18{
+    font-size: 18px;
+}
+fs-20{
+    font-size: 20px;
+}
+
+fs-13{
+    font-size: 13px;
+}
+
+    
+fs-25{
+    font-size: 25px;
+}
+
+
+.heighlight{
+    color:var(--primary);
+    position: relative;
+}
+.line{
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+}
+
+.bmi-hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;    
+    background: url(https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-bmi{
+    width: 60%;
+    border-radius: .5rem;
+    background-color: var(--bg);
+    padding: 2.7rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.bmi-form{
+    margin-top: 2.2rem;
+}
+/* .notice{
+    vertical-align: middle;
+} */
+.hide{
+    display: none;
+}
+
+form input{
+    display: block;
+    width: 70%;
+    margin-top: .2rem;
+    border-radius: .2rem ;
+    border: 1px solid var(--cg);
+    outline: none;
+    margin-bottom: .5rem;
+    padding: .5rem .5rem;
+}
+.notice{
+    vertical-align: middle;
+    fill: #FF5858;
+    margin-right: .3rem;
+}
+
+.danger{
+    color: var(--danger);
+   display: none;
+}
+
+.active{
+display: block;
+}
+
+input:focus{
+    border: var(--primary) 1px solid;
+}
+
+form button{
+    background-color: var(--primary);
+    color: white;
+    border-radius: .2rem;
+    padding: .5rem 1.5rem;
+    border: 0px;
+    font-size: 18px;
+    margin-top: .5rem; 
+    cursor: pointer;
+}
+
+.left-div{
+    width: 60%;
+}
+
+.bmi-result{
+    width: 40%;
+}
+
+.result{
+    background-color: white;
+    padding: 1rem;
+    border-radius: .2rem;
+    border-left: 5px solid var(--primary);
+}
